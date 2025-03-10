@@ -17,8 +17,7 @@ Great for keeping your OLED pixels from burning.
 </p>
 
 - When clicking on any part of the screen (except the README link) it will go full screen hiding the mouse cursor.
-
-- When done, 'Esc' key will come back from fullscreen.
+- When done, just hit 'Esc' key twice (first stroke will come back from fullscreen and second stroke will close the app).
 
 
 ## Favicon License
