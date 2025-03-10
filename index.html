@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="mobile-web-app-capable" content="yes">    
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githack.com/domgom/blackscreen/main/apple-touch-icon.png">
@@ -40,7 +40,9 @@
         document.addEventListener("click", () => {
             if (!document.fullscreenElement) {
                 document.documentElement.requestFullscreen().then(() => {
-                    document.body.classList.add("hide-cursor");
+                  setTimeout(() => {
+                      document.body.classList.add("hide-cursor");
+                  }, 500);
                 }).catch(err => {
                     console.warn("Fullscreen mode not supported:", err);
                 });
@@ -53,7 +55,7 @@
         });
         document.addEventListener("keydown", (event) => {
             if (event.key === "Escape") {
-                window.close(); // Nice try
+                window.close();
             }
       });
     </script>
