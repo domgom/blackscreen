@@ -2,8 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Screen</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githack.com/domgom/blackscreen/main/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githack.com/domgom/blackscreen/main/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githack.com/domgom/blackscreen/main/favicon-16x16.png">
+    <link rel="manifest" href="https://raw.githack.com/domgom/blackscreen/main/site.webmanifest">
+    <title> </title>
     <style>
         * {
             margin: 0;
@@ -45,9 +51,14 @@
                 document.body.classList.remove("hide-cursor");
             }
         });
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+                window.close(); // Nice try
+            }
+      });
     </script>
 </head>
 <body>
-  <a href="https://github.com/domgom/blackscreen/blob/main/README.md">README</a>
+  <a target="_blank" href="https://github.com/domgom/blackscreen/blob/main/README.md">README</a>
 </body>
 </html>
